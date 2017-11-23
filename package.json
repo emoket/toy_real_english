@@ -1,0 +1,24 @@
+{
+  "name": "toy_real_english",
+  "version": "1.0.0",
+  "description": "n: 진짜 미국식 영어 개인 프로젝트",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emoket/toy_real_english.git"
+  },
+  "author": "Yongjin Park",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emoket/toy_real_english/issues"
+  },
+  "homepage": "https://github.com/emoket/toy_real_english#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6"
+  }
+}
