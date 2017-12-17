@@ -1,0 +1,20 @@
+<div class="card card-body">
+  <h3>Edit Expression</h3>
+  <form method="POST" action="/exprs/{{expr.id}}?_method=PUT">
+    <!-- FOR METHOD OVERRIDE : input type="hidden" -->
+    <input type="hidden" name="_method" value="PUT">
+    <div class="form-group">
+      <label for="eng">English expression</label>
+      <input type="text" class="form-control" name="eng" value="{{expr.eng}}" required>
+    </div>
+    <div class="form-group">
+      <label for="kor">Description</label>
+      <input type="text" class="form-control" name="kor" value="{{expr.kor}}" required>
+    </div>
+    <div class="form-group">
+      <label for="tag">Tag</label>
+      <input type="text" class="form-control" name="tag" value="{{expr.tag}}" required>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+  </form>
+</div>

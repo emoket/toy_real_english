@@ -1,0 +1,16 @@
+{{#each exprs}}
+  <div class="card card-body mb-2">
+    <h4>{{kor}}</h4>
+    <p>{{eng}}</p>
+    <p>{{tag}}</p>
+    <a class="btn btn-dark btn-block mb-2" href="/exprs/edit/{{id}}">Edit</a>
+    <form method="POST" action="/exprs/{{id}}?_method=DELETE">
+      <!-- FOR METHOD OVERRIDE : input type="hidden" -->
+      <input type="hidden" name="_method" value="DELETE">
+      <input type="submit" class="btn btn-danger btn-block" value="Delete">
+    </form>
+  </div>
+{{else}}
+  <p>No Expressions listed</p>
+{{/each}}
+
