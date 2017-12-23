@@ -23,8 +23,10 @@ const users = require('./routes/users');
 // DB Config
 const db = require('./config/database');
 
+
 // Map global promise - get rid of warning
 mongoose.Promise = global.Promise;
+
 
 // Connect to mongoose
 mongoose.connect(db.mongoURI, {
@@ -74,6 +76,7 @@ app.use(flash());
 // Index page
 app.get('/', (req, res) => {
   Expr.find({})
+    .sort({date:'desc'})
     .then(allExpressions => {
       res.render('index', {
         allExpressions: allExpressions

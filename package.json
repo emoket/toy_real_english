@@ -5,7 +5,8 @@
   "main": "app.js",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test" : "set NODE_ENV=development && node app.js"
   },
   "author": "Yongjin Park <insight.emoket@gmail.com>",
   "license": "MIT",
